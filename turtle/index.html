@@ -204,6 +204,381 @@
     </div>
   </div>
 </section>
+
+<section class="container is-max-desktop" style="text-align: center;" >
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">&#128293;&nbsp;Results on Video Restoration Tasks&nbsp;&#128293;</h2>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding: 20px;
+            }
+            .carousel2 {
+                width: 80%;
+                margin: auto;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                position: relative;
+                background-color: #fff;
+            }
+            .carousel-inner {
+                display: flex;
+                transition: transform 0.5s ease;
+            }
+            .carousel-table {
+                min-width: 100%;
+                box-sizing: border-box;
+                padding: 20px;
+            }
+            h3 {
+                margin: 0 0 15px 0;
+                color: #333;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 10px;
+                text-align: left;
+            }
+            th {
+                background-color: #D1E9F6;
+                color: white;
+            }
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            tr:hover {
+                background-color: #e0e0e0;
+            }
+            .carousel-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #8EACCD;
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+            .carousel-button.prev {
+                left: 10px;
+            }
+            .carousel-button.next {
+                right: 10px;
+            }
+            .carousel-button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="carousel2">
+        <div class="carousel-inner" id="carouselInner">
+            <div class="carousel-table">
+                <h2><strong>Night Video Deraining&nbsp;&#x1f303;&nbsp;&#x1f327;</strong></h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>PSNR</th>
+                            <th>SSIM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FDM</td>
+                            <td>23.49</td>
+                            <td>0.7657</td>
+                        </tr>
+                        <tr>
+                            <td>WeatherDiff</td>
+                            <td>20.98</td>
+                            <td>0.6697</td>
+                        </tr>
+                        <tr>
+                          <td>MetaRain (Meta)</td>
+                          <td>23.49</td>
+                          <td>0.7171</td>
+                        </tr>
+                        <tr>
+                          <td>MetaRain (Scratch)</td>
+                          <td>22.21</td>
+                          <td>0.6723</td>
+                        </tr>
+                        <tr>
+                          <td>NightRain</td>
+                          <td>26.73</td>
+                          <td>0.8647</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Turtle</strong>&nbsp;&#128034;</td>
+                          <td><strong>29.26</strong></td>
+                          <td><strong>0.9250</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="carousel-table">
+              <h2><strong>Video Desnowing&nbsp;&#x26C4;</strong></h2>
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Method</th>
+                          <th>PSNR</th>
+                          <th>SSIM</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>TransWeather</td>
+                          <td>23.11</td>
+                          <td>0.8543</td>
+                      </tr>
+                      <tr>
+                          <td>RDDNet</td>
+                          <td>22.97</td>
+                          <td>0.8742</td>
+                      </tr>
+                      <tr>
+                        <td>BasicVSR++</td>
+                        <td>22.64</td>
+                        <td>0.8618</td>
+                      </tr>
+                      <tr>
+                        <td>RVRT</td>
+                        <td>20.90</td>
+                        <td>0.7974</td>
+                      </tr>
+                      <tr>
+                        <td>SVDNet</td>
+                        <td>25.06</td>
+                        <td>0.9210</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Turtle</strong>&nbsp;&#128034;</td>
+                        <td><strong>26.02</strong></td>
+                        <td><strong>0.9230</strong></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+
+          <div class="carousel-table">
+            <h2><strong>Real-World Video Deblurring&nbsp;&#127939;</strong></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>PSNR</th>
+                        <th>SSIM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IFI-RNN</td>
+                        <td>30.89</td>
+                        <td>0.9170</td>
+                    </tr>
+                    <tr>
+                        <td>STFAN</td>
+                        <td>29.47</td>
+                        <td>0.8720</td>
+                    </tr>
+                    <tr>
+                      <td>CDVD-TSP</td>
+                      <td>31.58</td>
+                      <td>0.9260</td>
+                    </tr>
+                    <tr>
+                      <td>PVDNet</td>
+                      <td>31.35</td>
+                      <td>0.9230</td>
+                    </tr>
+                    <tr>
+                      <td>ESTRNN</td>
+                      <td>31.39</td>
+                      <td>0.9260</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Turtle</strong>&nbsp;&#128034;</td>
+                      <td><strong>33.58</strong></td>
+                      <td><strong>0.9540</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="carousel-table">
+          <h2><strong>Synthetic Video Deblurring (GoPro)&nbsp;&#x1F4F9;</strong></h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Method</th>
+                      <th>PSNR</th>
+                      <th>SSIM</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>TSP</td>
+                      <td>31.67</td>
+                      <td>0.9280</td>
+                  </tr>
+                  <tr>
+                      <td>GSTA</td>
+                      <td>32.10</td>
+                      <td>0.9600</td>
+                  </tr>
+                  <tr>
+                    <td>FGST</td>
+                    <td>32.90</td>
+                    <td>0.9610</td>
+                  </tr>
+                  <tr>
+                    <td>BasicVSR++</td>
+                    <td>34.01</td>
+                    <td>0.9520</td>
+                  </tr>
+                  <tr>
+                    <td>DSTNet</td>
+                    <td>34.16</td>
+                    <td>0.9679</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Turtle</strong>&nbsp;&#128034;</td>
+                    <td><strong>34.50</strong></td>
+                    <td><strong>0.9720</strong></td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+
+      <div class="carousel-table">
+        <h2><strong>Video Raindrop and Rain Streak Removal&nbsp;&#x1f327;</strong></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>PSNR</th>
+                    <th>SSIM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>VRT</td>
+                    <td>27.77</td>
+                    <td>0.8856</td>
+                </tr>
+                <tr>
+                    <td>TTVSR</td>
+                    <td>28.05</td>
+                    <td>0.8998</td>
+                </tr>
+                <tr>
+                  <td>RVRT</td>
+                  <td>28.24</td>
+                  <td>0.8857</td>
+                </tr>
+                <tr>
+                  <td>BasicVSR++</td>
+                  <td>29.75</td>
+                  <td>0.9171</td>
+                </tr>
+                <tr>
+                  <td>ViMPNet</td>
+                  <td>31.02</td>
+                  <td>0.9283</td>
+                </tr>
+                <tr>
+                  <td><strong>Turtle</strong>&nbsp;&#128034;</td>
+                  <td><strong>32.01</strong></td>
+                  <td><strong>0.9590</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="carousel-table">
+      <h2><strong>Video Super Resolution&nbsp;&#x1F4F9;&nbsp;&#x2191;</strong></h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Method</th>
+                  <th>PSNR</th>
+                  <th>SSIM</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>BasicVSR</td>
+                  <td>23.38</td>
+                  <td>0.7594</td>
+              </tr>
+              <tr>
+                  <td>MANA</td>
+                  <td>23.15</td>
+                  <td>0.7513</td>
+              </tr>
+              <tr>
+                <td>TTVSR</td>
+                <td>23.60</td>
+                <td>0.7686</td>
+              </tr>
+              <tr>
+                <td>BasicVSR++</td>
+                <td>23.70</td>
+                <td>0.7713</td>
+              </tr>
+              <tr>
+                <td>EAVSR+</td>
+                <td>23.94</td>
+                <td>0.7726</td>
+              </tr>
+              <tr>
+                <td><strong>Turtle</strong>&nbsp;&#128034;</td>
+                <td><strong>25.30</strong></td>
+                <td><strong>0.8272</strong></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+    </div>
+        <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+
+    <div class="indicators" id="indicators">
+      <div class="indicator active" onclick="moveToCarousel(0)"></div>
+      <div class="indicator" onclick="moveToCarousel(1)"></div>
+      <div class="indicator" onclick="moveToCarousel(2)"></div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+
+        function moveCarousel(direction) {
+            const inner = document.getElementById('carouselInner');
+            const tables = inner.children.length;
+
+            currentIndex = (currentIndex + direction + tables) % tables;
+            inner.style.transform = 'translateX(' + (-currentIndex * 100) + '%)';
+        }
+    </script>
+    </div>
+  </div>
+</section>
 <!-- Image carousel -->
 <!-- <section class="hero is-small">
   <div class="hero-body">
